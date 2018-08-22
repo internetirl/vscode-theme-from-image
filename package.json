@@ -1,0 +1,38 @@
+{
+	"name": "themegen",
+	"displayName": "theme gen",
+	"description": "themes generated from images",
+	"version": "1.0.0",
+	"publisher": "internetirl",
+	"scripts": {
+		"prestart": "tsc index.ts",
+		"start": "node index.js",
+		"build": "node index.js"
+	},
+	"engines": {
+		"vscode": "^1.25.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "theme gen",
+				"uiTheme": "vs-dark",
+				"path": "./themes/generated.json"
+			},
+			{
+				"label": "theme gen 1",
+				"uiTheme": "vs-dark",
+				"path": "./themes/generated-1.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"@types/node": "^7.0.10",
+		"node-vibrant": "^3.0.0",
+		"typescript": "^2.2.1",
+		"vscode-theme-generator": "*"
+	}
+}
